@@ -27,7 +27,7 @@ public class Combat {
 	 * Constructor for the player class
 	 * 
 	 * @param player: the player of the game
-	 * @param opponent: an AI that will fight with the player
+	 * @param opponent: an AI that will fight against the player
 	 */
 	public Combat(PlayerCopy player, CombatAI opponent) {
 		this.opponent = opponent;

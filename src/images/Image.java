@@ -15,14 +15,25 @@ public class Image extends PhysicalObject {
 	/**
 	 * Constructor
 	 * 
-	 * @param x
-	 * @param y
+	 * @param position
 	 * @param width
 	 * @param height
-	 * @param name
 	 */
 	public Image(Point position, int width, int height, BufferedImage image) {
 		super(position, width, height);
+		this.image = image;
+	}
+	
+	/**
+	 * Constructor for an image on the world map
+	 * 
+	 * @param position
+	 * @param width
+	 * @param height
+	 * @param passable
+	 */
+	public Image(Point position, int width, int height, BufferedImage image, boolean passable) {
+		super(position, width, height, passable);
 		this.image = image;
 	}
 

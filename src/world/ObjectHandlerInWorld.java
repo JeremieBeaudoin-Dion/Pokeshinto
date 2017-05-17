@@ -54,7 +54,7 @@ public class ObjectHandlerInWorld {
 		
 		ArrayList<PhysicalObject> game = new ArrayList<PhysicalObject>();
 		BufferedImage[][] background = worldImageLoader.getBackground(0);
-		int size = worldImageLoader.TILE_WIDTH;
+		int size = WorldImageLoader.TILE_WIDTH;
 		
 		for (int y=0; y<background.length; y++) {
 			for (int x=0; x<background[y].length; x++) {

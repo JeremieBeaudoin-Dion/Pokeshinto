@@ -3,6 +3,7 @@ package pokeshinto;
 import combat.CombatAttributes;
 import combat.PlayerCopy;
 import images.Point;
+import world.WorldImageLoader;
 
 /**
  * The class that represent the player Object. Handles 
@@ -17,6 +18,7 @@ public class Player{
 	private Point pixelPosition;
 	private String facing;
 	private int currentMapID;
+	private boolean[][] currentMapCollisions;
 	
 	// The stats of the player
 	private double maxHealth;
@@ -95,6 +97,10 @@ public class Player{
 	public int getCurrentMapID() {
 		return currentMapID;
 	}
+	
+	public void setCurrentMapCollision(boolean[][] value) {
+		currentMapCollisions = value;
+	}
 
 	public void update() {
 		// TODO Auto-generated method stub
@@ -102,17 +108,58 @@ public class Player{
 	}
 	
 	public void moveRight() {
-		pixelPosition.addX(4);
+		setNewPos(4, "x");
 	}
 	public void moveLeft() {
-		pixelPosition.addX(-4);
+		setNewPos(-4, "x");
 	}
 	public void moveUp() {
-		pixelPosition.addY(-4);
+		setNewPos(-4, "y");
 	}
 	public void moveDown() {
-		pixelPosition.addY(4);
+		setNewPos(4, "y");
 	}
 	
+	/**
+	 * Sets the new position of the player according to the value
+	 * 
+	 * @param value: positive or negative int
+	 * @param ID: "x" or "y"
+	 */
+	private void setNewPos(int value, String ID) {
+		
+		Point desiredPosition = new Point(pixelPosition.getX(), pixelPosition.getY());
+		
+		if (ID.equals("x")){
+			desiredPosition.addX(value);
+		} else {
+			desiredPosition.addY(value);
+		}
+		
+		if (checkPosition(desiredPosition)) {
+			pixelPosition = desiredPosition;
+		}
+	}
+	
+	/**
+	 * Returns true if the desired position is good according to the map.
+	 * 
+	 * @param desiredPosition
+	 * @return
+	 */
+	private boolean checkPosition(Point desiredPosition) {
+		
+		Point gridPosition = new Point((int) desiredPosition.getX() / WorldImageLoader.TILE_WIDTH, 
+									   (int) desiredPosition.getY() / WorldImageLoader.TILE_WIDTH);
+		
+		if (gridPosition.getX() < 0 || gridPosition.getY() < 0) {
+			return false;
+		} else if (gridPosition.getX() >= currentMapCollisions.length || 
+				gridPosition.getY() >= currentMapCollisions.length) {
+			return false;
+		}
+		
+		return currentMapCollisions[gridPosition.getY()][gridPosition.getX()];
+	}
 	
 }

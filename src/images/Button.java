@@ -25,6 +25,19 @@ public class Button extends PhysicalObject {
 	}
 	
 	/**
+	 * Constructor for an image-button in the world
+	 * 
+	 * @param image
+	 * @param selected
+	 * @param passable
+	 */
+	public Button(Image image, boolean selected, boolean passable) {
+		super(image.getPosition(), image.getWidth(), image.getHeight(), passable);
+		this.image = image;
+		this.selected = selected;
+	}
+	
+	/**
 	 * Constructor for a button with text
 	 * 
 	 * @param position

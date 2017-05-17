@@ -10,6 +10,10 @@ package world;
  */
 public class WorldMapCreator {
 	
+	public Map get(int mapID) {
+		return null;
+	}
+	
 	/**
 	 * Return an array representing the background of the map
 	 * 

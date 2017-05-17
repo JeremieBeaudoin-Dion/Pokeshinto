@@ -14,15 +14,13 @@ import javax.imageio.ImageIO;
  */
 public class WorldImageLoader {
 	
-	public final int TILE_WIDTH = 64;
-	public final int NUMBER_OF_TILES_IN_TILESET = 20;
+	public final static int TILE_WIDTH = 64;
+	public final static int NUMBER_OF_TILES_IN_TILESET = 20;
 	
 	private BufferedImage worldTileSet;
-	private WorldMapCreator worldMapCreator;
 	
 	private BufferedImage[][] background;
 	private BufferedImage[][] foreground;
-	private int currentMapID;
 	
 	private BufferedImage player;
 	private BufferedImage playerTile;
@@ -34,9 +32,6 @@ public class WorldImageLoader {
 	public WorldImageLoader() throws IOException {
 		
 		loadAllImages();
-		
-		worldMapCreator = new WorldMapCreator();
-		currentMapID = -1;
 		
 	}
 	

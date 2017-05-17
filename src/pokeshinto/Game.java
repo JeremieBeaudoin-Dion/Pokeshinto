@@ -95,7 +95,11 @@ public class Game{
 		allPokeshintos[0] = InfoHandler.getPokeshinto("Kohadai");
 		allPokeshintos[1] = InfoHandler.getPokeshinto("Kurokage");
 		
-		return new Player(100.0, allPokeshintos, InfoHandler.getBasicCombatAttributes());
+		Player player = new Player(100.0, allPokeshintos, InfoHandler.getBasicCombatAttributes());
+		
+		player.setCurrentMapCollision(new boolean[][]{{true, true, true}, {true, true, true}, {true, true, true}});
+		
+		return player;
 	}
 	
 	/**
@@ -165,7 +169,7 @@ public class Game{
 	private void delayGame(long time){
 		long sleepTime = (1000 / fps) - time;
 		
-		if (sleepTime > 0){ 
+		if (sleepTime >= 0){ 
 				
 			try{ 
 				// Stop the game for a limited time

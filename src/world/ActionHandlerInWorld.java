@@ -19,6 +19,8 @@ public class ActionHandlerInWorld {
 	private Menu currentMenu;
 	private StackLinked<Menu> allMenus;
 	
+	private WorldMapCreator worldMapCreator;
+	
 	private Map currentMap;
 	
 	private boolean combatHasStarted;
@@ -29,9 +31,14 @@ public class ActionHandlerInWorld {
 	public ActionHandlerInWorld(Player player) {
 		this.player = player;
 		combatHasStarted = false;
+		
+		// Menus
 		allMenus = new StackLinked<Menu>();
 		currentMenu = InfoHandler.getMenu("Start Combat");
 		allMenus.push(currentMenu);
+		
+		// Maps
+		worldMapCreator = new WorldMapCreator();
 	}
 	
 	/**
@@ -71,9 +78,16 @@ public class ActionHandlerInWorld {
 	}
 	
 	/**
-	 * Returns the current position of the Player object
+	 * Gets a new map from the worldMapCreator
+	 */
+	public void updateMap() {
+		currentMap = worldMapCreator.get(player.getCurrentMapID());
+	}
+	
+	/**
+	 * Returns the current Player object
 	 * 
-	 * @return a point with x and y as int
+	 * @return the Player object
 	 */
 	public Player getPlayer() {
 		return player;

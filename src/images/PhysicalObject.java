@@ -8,9 +8,10 @@ package images;
  */
 public class PhysicalObject {
 	
-	private Point position;
+	protected Point position;
 	private int width;
 	private int height;
+	private boolean passable;
 	
 	/**
 	 * Constructor with Width and Height
@@ -23,6 +24,22 @@ public class PhysicalObject {
 		this.position = position;
 		this.width = width;
 		this.height = height;
+		this.passable = true;
+	}
+	
+	/**
+	 * Constructor with all attributes
+	 * 
+	 * @param Point position
+	 * @param width
+	 * @param height
+	 * @param passable: if the object can be walked through by the Player
+	 */
+	public PhysicalObject(Point position, int width, int height, boolean passable) {
+		this.position = position;
+		this.width = width;
+		this.height = height;
+		this.passable = passable;
 	}
 	
 	/**
@@ -54,6 +71,9 @@ public class PhysicalObject {
 	}
 	public Point getSouthPoint() {
 		return new Point(position.getX() + width, position.getY() + height);
+	}
+	public boolean getPassable() {
+		return passable;
 	}
 
 }
