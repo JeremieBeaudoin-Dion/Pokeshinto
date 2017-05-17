@@ -1,6 +1,6 @@
 Pokeshinto is a Pokemon-Type RPG game made with pure Java.
 
-It has 4 main packages.
+SRC contains all the Java classes, which are divided into 4 main packages.
 
 Pokeshinto
 As the principal package with the name of the game, Pokeshinto holds the principal MVC classes of the game. The main method is in the class Game.java
