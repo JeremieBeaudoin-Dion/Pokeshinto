@@ -19,6 +19,8 @@ public class ActionHandlerInWorld {
 	private Menu currentMenu;
 	private StackLinked<Menu> allMenus;
 	
+	private Map currentMap;
+	
 	private boolean combatHasStarted;
 	
 	/**
