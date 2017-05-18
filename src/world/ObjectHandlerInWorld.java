@@ -19,7 +19,6 @@ import pokeshinto.Player;
 public class ObjectHandlerInWorld {
 	
 	// The instances of the MVC
-	private ActionHandlerInWorld actionHandlerInWorld;
 	private Player player;
 	private WorldImageLoader worldImageLoader;
 	
@@ -34,10 +33,9 @@ public class ObjectHandlerInWorld {
 	 * @param player: the player instance of the game
 	 * @throws IOException
 	 */
-	public ObjectHandlerInWorld(ActionHandlerInWorld actionHandlerInWorld, Player player) throws IOException {
+	public ObjectHandlerInWorld(Player player) throws IOException {
 		
 		// MVC component
-		this.actionHandlerInWorld = actionHandlerInWorld;
 		this.player = player;
 		
 		// Handles images objects
@@ -46,26 +44,22 @@ public class ObjectHandlerInWorld {
 	}
 	
 	/**
+	 * Returns the map representation according to mapID
+	 * 
+	 * @param mapID: the name of the desired map
+	 * @return
+	 */
+	public Map getMap(String mapID) {
+		return worldImageLoader.getMap(mapID);
+	}
+	
+	/**
 	 * Returns all physical object to show in the game
 	 * 
 	 * @return
 	 */
 	public ArrayList<PhysicalObject> get() {
-		
-		ArrayList<PhysicalObject> game = new ArrayList<PhysicalObject>();
-		BufferedImage[][] background = worldImageLoader.getBackground(0);
-		int size = WorldImageLoader.TILE_WIDTH;
-		
-		for (int y=0; y<background.length; y++) {
-			for (int x=0; x<background[y].length; x++) {
-				
-				game.add(new Image(new Point(x * size, y * size), size, size, background[y][x]));
-			}
-		}
-		
-		game.add(new Image(player.getPosition(), 48, 48, worldImageLoader.getPlayer()));
-		
-		return game;
+		return getMap(player.getCurrentMapID()).getObjects();
 	}
 
 }

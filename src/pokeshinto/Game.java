@@ -73,8 +73,8 @@ public class Game{
 		player = createPlayer();
 		
 		// Main components of the game
-		actionHandlerInWorld = new ActionHandlerInWorld(player);
-		objectHandlerInWorld = new ObjectHandlerInWorld(actionHandlerInWorld, player);
+		objectHandlerInWorld = new ObjectHandlerInWorld(player);
+		actionHandlerInWorld = new ActionHandlerInWorld(player, objectHandlerInWorld);
 		actionHandlerInCombat = new ActionHandlerInCombat(player);
 		objectHandlerInCombat = new ObjectHandlerInCombat(actionHandlerInCombat);
 		imageHandler = new ImageHandler();

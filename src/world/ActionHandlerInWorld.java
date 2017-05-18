@@ -19,7 +19,7 @@ public class ActionHandlerInWorld {
 	private Menu currentMenu;
 	private StackLinked<Menu> allMenus;
 	
-	private WorldMapCreator worldMapCreator;
+	private ObjectHandlerInWorld objectHandlerInWorld;
 	
 	private Map currentMap;
 	
@@ -28,7 +28,7 @@ public class ActionHandlerInWorld {
 	/**
 	 * Constructor for the controller of the world environment
 	 */
-	public ActionHandlerInWorld(Player player) {
+	public ActionHandlerInWorld(Player player, ObjectHandlerInWorld model) {
 		this.player = player;
 		combatHasStarted = false;
 		
@@ -37,8 +37,8 @@ public class ActionHandlerInWorld {
 		currentMenu = InfoHandler.getMenu("Start Combat");
 		allMenus.push(currentMenu);
 		
-		// Maps
-		worldMapCreator = new WorldMapCreator();
+		// Model of the game
+		this.objectHandlerInWorld = model;
 	}
 	
 	/**
@@ -81,7 +81,7 @@ public class ActionHandlerInWorld {
 	 * Gets a new map from the worldMapCreator
 	 */
 	public void updateMap() {
-		currentMap = worldMapCreator.get(player.getCurrentMapID());
+		
 	}
 	
 	/**

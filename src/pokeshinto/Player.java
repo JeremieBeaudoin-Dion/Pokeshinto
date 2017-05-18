@@ -17,7 +17,7 @@ public class Player{
 	// The position of the player in the game
 	private Point pixelPosition;
 	private String facing;
-	private int currentMapID;
+	private String currentMapID;
 	private boolean[][] currentMapCollisions;
 	
 	// The stats of the player
@@ -53,7 +53,7 @@ public class Player{
 		this.combatAttributes = combatAttributes;
 		this.equipedPokeshinto = allShintos[0];
 		this.allShintos = allShintos;
-		this.currentMapID = 0;
+		this.currentMapID = "Test";
 		
 		pixelPosition = new Point(0, 0);
 	}
@@ -94,7 +94,7 @@ public class Player{
 		return facing;
 	}
 	
-	public int getCurrentMapID() {
+	public String getCurrentMapID() {
 		return currentMapID;
 	}
 	

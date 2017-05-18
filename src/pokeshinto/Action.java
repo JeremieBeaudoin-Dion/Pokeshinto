@@ -1,8 +1,9 @@
 package pokeshinto;
+
 /**
  * A choice binds a String action to a <T> element
- * @author Colocataire
- *
+ * 
+ * @author Jérémie Beaudoin-Dion
  */
 public class Action<T> {
 	
