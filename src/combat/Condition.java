@@ -1,9 +1,10 @@
 package combat;
+
 /**
  * A condition is used in combat for a skill or a damage. If the condition is 
  * not met, then the skill or damage is not done.
  * 
- * @author Jérémie Beaudoin-Dion
+ * @author JÃ©rÃ©mie Beaudoin-Dion
  *
  */
 public class Condition extends StatOriented {

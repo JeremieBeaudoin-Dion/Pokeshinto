@@ -1,8 +1,9 @@
 package combat;
+
 /**
  * A type of status which protects from certain damage
  * 
- * @author Jérémie Beaudoin-Dion
+ * @author JÃ©rÃ©mie Beaudoin-Dion
  *
  */
 public class StatusProtection extends Status {

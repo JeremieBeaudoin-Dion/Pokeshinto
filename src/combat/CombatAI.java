@@ -1,4 +1,5 @@
 package combat;
+
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -6,6 +7,11 @@ import java.util.List;
 import pokeshinto.Action;
 import pokeshinto.Pokeshinto;
 
+/**
+ * A combat AI is used during combat to hold information and do decisions
+ *
+ * @author Jérémie Beaudoin-Dion
+ */
 public abstract class CombatAI {
 	
 	// Basic information
@@ -36,13 +42,17 @@ public abstract class CombatAI {
 	protected Action<Integer> choice;
 	
 	protected int capturedUntil;
-	
-	/**
-	 * Constructor
-	 * 
-	 * @param id : the pokeshinto's id
-	 * @param combatAttributes : the attributes of the person
-	 */
+
+    /**
+     * Constructor
+     *
+     * @param allPokeshinto: all the pokeshintos of the AI
+     * @param current: the equiped pokeshinto
+     * @param combatAttributes: the attributes of the AI
+     * @param maxHealth: the maximum possible health
+     * @param health: the current health
+     * @param type: if it is an Enemy or a Player
+     */
 	public CombatAI(Pokeshinto[] allPokeshinto, Pokeshinto current, CombatAttributes combatAttributes, 
 					double maxHealth, double health, String type) {
 		this.allPokeshintos = allPokeshinto;
@@ -68,7 +78,7 @@ public abstract class CombatAI {
 	/**
 	 * Resets the damage dealt for the next turn
 	 */
-	public void resetDamage() {
+    void resetDamage() {
 		physicalDamageDealt = 0;
 		magicalDamageDealt = 0;
 	}
@@ -76,9 +86,9 @@ public abstract class CombatAI {
 	/**
 	 * Does the action of the CombatAI
 	 * 
-	 * @param combat
+	 * @param combat: the Combat class holing the logic of the combat
 	 */
-	public void doChoice(Combat combat) {
+	void doChoice(Combat combat) {
 		if (choice.getKey().equals("Skill")){
 			doSkill(combat, currentPokeshinto.getSkill(choice.getValue()));
 		} else if (choice.getKey().equals("Switch")){
@@ -89,8 +99,8 @@ public abstract class CombatAI {
 	/**
 	 * Excute the skill of the AI
 	 * 
-	 * @param combat
-	 * @param skill
+	 * @param combat: the Combat class holing the logic of the combat
+	 * @param skill: the skill to use
 	 */
 	private void doSkill(Combat combat, Skill skill) {
 		if (skill.isUsable(combat, type)) {
@@ -134,7 +144,7 @@ public abstract class CombatAI {
 	/**
 	 * Switch the current equiped pokeshinto
 	 * 
-	 * @param pokeNumber
+	 * @param pokeNumber: the Number of the pokeshinto to switch
 	 */
 	private void doSwitch(int pokeNumber) {
 		int error = 0;
@@ -152,13 +162,15 @@ public abstract class CombatAI {
 		
 		pokeTurnNumber = 0;
 	}
-	
-	/**
-	 * Do damage to the AI
-	 * 
-	 * @param damage
-	 */
-	public void doDamage(Combat combat, double physicalDamage, double magicalDamage) {
+
+    /**
+     * Does damage to the AI
+     *
+     * @param combat: the Combat class holing the logic of the combat
+     * @param physicalDamage: how much physical damage to deal
+     * @param magicalDamage: how much magical damage to deal
+     */
+	void doDamage(Combat combat, double physicalDamage, double magicalDamage) {
 		// Check for damage protection
 		double magicalProtectionPercentage = 0;
 		double physicalProtectionPercentage = 0;
@@ -197,7 +209,7 @@ public abstract class CombatAI {
 	 * Adds on to the numbers of turns the pokeshinto has been in the hands of the AI
 	 * Also implements the turn number of the skills of the Pokeshinto
 	 */
-	public void implementPoketurn() {
+	void implementPoketurn() {
 		// Adds to the turn number
 		pokeTurnNumber++;
 		
@@ -239,20 +251,20 @@ public abstract class CombatAI {
 	/**
 	 * Return true if the pokemon has been captured
 	 */
-	public boolean getCaptured() {
+	boolean getCaptured() {
 		return capturedUntil == 0;
 	}
 	
 	/**
 	 * Ask the AI what is the decision
 	 */
-	public Action<Integer> getDecision() {
+	Action<Integer> getDecision() {
 		return choice;
 	}
 	
 	/**
 	 * Adds a new status to the CombatAI
-	 * @param status
+	 * @param status: the new status to Add
 	 */
 	public void addStatus(Status status) {
 		allStatus.add(status);

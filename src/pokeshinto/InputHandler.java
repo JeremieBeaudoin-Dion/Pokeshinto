@@ -9,12 +9,12 @@ import images.ImageHandler;
  * The InputHandler class handles input from the player and converts it to
  * actions that the game can handle
  * 
- * @author Jérémie Beaudoin-Dion
+ * @author JÃ©rÃ©mie Beaudoin-Dion
  *
  */
 public class InputHandler {
 	
-	ImageHandler imageHandler;
+	private ImageHandler imageHandler;
 	
 	// Enables player input
 	private KeyHandler playerInput; 

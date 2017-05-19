@@ -3,7 +3,7 @@ package world;
 /**
  * Event happening in the world
  * 
- * @author Jérémie Beaudoin-Dion
+ * @author JÃ©rÃ©mie Beaudoin-Dion
  *
  */
 public class Event {

@@ -3,7 +3,7 @@ package images;
 /**
  * An object which has a position and a width and height on the frame.
  * 
- * @author Jérémie Beaudoin-Dion
+ * @author JÃ©rÃ©mie Beaudoin-Dion
  *
  */
 public class PhysicalObject {
@@ -16,7 +16,7 @@ public class PhysicalObject {
 	/**
 	 * Constructor with Width and Height
 	 * 
-	 * @param Point position
+	 * @param position
 	 * @param width
 	 * @param height
 	 */
@@ -30,7 +30,7 @@ public class PhysicalObject {
 	/**
 	 * Constructor with all attributes
 	 * 
-	 * @param Point position
+	 * @param position
 	 * @param width
 	 * @param height
 	 * @param passable: if the object can be walked through by the Player

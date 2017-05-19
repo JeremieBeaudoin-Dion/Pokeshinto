@@ -1,6 +1,12 @@
 package combat;
 
-public abstract class StatOriented {
+/**
+ * A stat oriented can be a skill or a damage that needs to find one or more
+ * attributes from the combat AIs.
+ *
+ * @author Jérémie Beaudoin-Dion
+ */
+abstract class StatOriented {
 	
 	/**
 	 * Finds the owner of the desired stat then sends it to the right method
@@ -10,7 +16,7 @@ public abstract class StatOriented {
 	 * @param stat: the Name of the stat to find
 	 * @return the double value of the desired stat
 	 */
-	protected double findStat(Combat combat, String owner, String stat, boolean isMe) {
+	double findStat(Combat combat, String owner, String stat, boolean isMe) {
 		
 		if (owner.equals("Player") && isMe || owner.equals("Opponent") && !isMe) {
 			return findPlayerStat(combat, stat);
@@ -28,20 +34,21 @@ public abstract class StatOriented {
 	 * @return the double value of the stat
 	 */
 	private double findPlayerStat(Combat combat, String stat) {
-		if (stat.equals("CurrentHp")){
-			return combat.getPlayerCurrentHp();
-		} else if (stat.equals("MaxHp")){
-			return combat.getPlayerMaxHp();
-		} else if (stat.equals("MissingHp")){
-			return combat.getPlayerMissingHp();
-		} else if (stat.equals("Strength")){
-			return combat.getPlayerStrength();
-		} else if (stat.equals("Focus")){
-			return combat.getPlayerFocus();
-		} else if (stat.equals("Armor")){
-			return combat.getPlayerArmor();
-		} else if (stat.equals("Agility")){
-			return combat.getPlayerAgility();
+		switch (stat) {
+			case "CurrentHp":
+				return combat.getPlayerCurrentHp();
+			case "MaxHp":
+				return combat.getPlayerMaxHp();
+			case "MissingHp":
+				return combat.getPlayerMissingHp();
+			case "Strength":
+				return combat.getPlayerStrength();
+			case "Focus":
+				return combat.getPlayerFocus();
+			case "Armor":
+				return combat.getPlayerArmor();
+			case "Agility":
+				return combat.getPlayerAgility();
 		} 
 		
 		System.out.println("FindStat error: the Player stat: " + stat + " is not handled.");
@@ -56,20 +63,21 @@ public abstract class StatOriented {
 	 * @return the double value of the stat
 	 */
 	private double findOpponentStat(Combat combat, String stat) {
-		if (stat.equals("CurrentHp")){
-			return combat.getOpponentCurrentHp();
-		} else if (stat.equals("MaxHp")){
-			return combat.getOpponentMaxHp();
-		} else if (stat.equals("MissingHp")){
-			return combat.getOpponentMissingHp();
-		} else if (stat.equals("Strength")){
-			return combat.getOpponentStrength();
-		} else if (stat.equals("Focus")){
-			return combat.getOpponentFocus();
-		} else if (stat.equals("Armor")){
-			return combat.getOpponentArmor();
-		} else if (stat.equals("Agility")){
-			return combat.getOpponentAgility();
+		switch (stat) {
+			case "CurrentHp":
+				return combat.getOpponentCurrentHp();
+			case "MaxHp":
+				return combat.getOpponentMaxHp();
+			case "MissingHp":
+				return combat.getOpponentMissingHp();
+			case "Strength":
+				return combat.getOpponentStrength();
+			case "Focus":
+				return combat.getOpponentFocus();
+			case "Armor":
+				return combat.getOpponentArmor();
+			case "Agility":
+				return combat.getOpponentAgility();
 		} 
 		
 		System.out.println("FindStat error: the Opponent stat: " + stat + " is not handled.");

@@ -8,7 +8,7 @@ import images.PhysicalObject;
  * A Map object is a world object which contains the images to
  * represent the current map, and its events.
  * 
- * @author Jérémie Beaudoin-Dion
+ * @author JÃ©rÃ©mie Beaudoin-Dion
  *
  */
 public class Map {

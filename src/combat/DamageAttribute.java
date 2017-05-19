@@ -1,9 +1,10 @@
 package combat;
+
 /**
  * This combat object is an action much like damage, but it is not affected by 
  * the CombatCalculator formula. It affects directly the selected attribute.
  * 
- * @author Jérémie Beaudoin-Dion
+ * @author JÃ©rÃ©mie Beaudoin-Dion
  *
  */
 public class DamageAttribute {

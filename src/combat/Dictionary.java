@@ -5,17 +5,16 @@ import pokeshinto.KeyException;
  * Similar to the HashMap, this stores <type> data and
  * binds it to a String key.
  * 
- * @author Jérémie Beaudoin-Dion
- *
+ * @author JÃ©rÃ©mie Beaudoin-Dion
  */
 public class Dictionary<T> {
-	
+
 	T[] values;
 	String[] keys;
-	
+
 	/**
 	 * Basic constructor with elements already created
-	 * 
+	 *
 	 * @param key
 	 * @param element
 	 */
@@ -26,7 +25,7 @@ public class Dictionary<T> {
 		} else {
 			throw new ExceptionComparableArrays("The lenght of the elements don't match");
 		}
-		
+
 	}
 	
 	/**
@@ -37,7 +36,7 @@ public class Dictionary<T> {
 	 * @return the <T> element
 	 */
 	public T getValueByKey(String key) throws KeyException{
-		
+
 		for(int i=0; i<keys.length; i++) {
 			if(keys[i].equals(key)){
 				return values[i];

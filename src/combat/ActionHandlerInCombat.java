@@ -12,7 +12,7 @@ import pokeshinto.StackLinked;
  * gets player input, sends it to the correct object, and holds 
  * most of the game objects.
  * 
- * @author Colocataire
+ * @author Jérémie Beaudoin-Dion
  *
  */
 public class ActionHandlerInCombat {
@@ -165,8 +165,7 @@ public class ActionHandlerInCombat {
 	
 	/**
 	 * Starts a combat with an opponent. Sets up the menu combat
-	 * 
-	 * @param player: its pokeShintos and useful Items
+	 *
 	 * @param opponent: a combat AI with pokeShintos
 	 */
 	public void startCombat(CombatAI opponent) {

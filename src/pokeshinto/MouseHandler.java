@@ -8,7 +8,7 @@ import java.awt.event.*;
  * then be called and know if the mouse is pressed or not with 
  * isMouseDown.
  * 
- * @author Jérémie Beaudoin-Dion
+ * @author JÃ©rÃ©mie Beaudoin-Dion
  */ 
 public class MouseHandler implements MouseListener {
 

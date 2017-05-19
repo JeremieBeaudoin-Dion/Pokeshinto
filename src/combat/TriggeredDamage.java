@@ -8,7 +8,7 @@ package combat;
  * 		3) End encounter == check only dmg done during encounter
  * 		4) End turn == check the whole stat
  * 
- * @author Jérémie Beaudoin-Dion
+ * @author JÃ©rÃ©mie Beaudoin-Dion
  *
  */
 public class TriggeredDamage {

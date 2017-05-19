@@ -1,8 +1,9 @@
 package combat;
+
 /**
  * Skills are ShintoMon's abilities that can be casted during combat.
  * 
- * @author Jérémie Beaudoin-Dion
+ * @author JÃ©rÃ©mie Beaudoin-Dion
  *
  */
 public class Skill extends Conditional {

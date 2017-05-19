@@ -8,7 +8,7 @@ import java.awt.event.*;
  * the data in an array of Booleans. The InputHandler can
  * then be called and the desired key bind getted from isKeyDown.
  * 
- * @author Jérémie Beaudoin-Dion
+ * @author JÃ©rÃ©mie Beaudoin-Dion
  */ 
 public class KeyHandler implements KeyListener {
 	

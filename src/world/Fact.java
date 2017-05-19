@@ -3,7 +3,7 @@ package world;
 /**
  * A Fact binds any generic object to a boolean
  * 
- * @author Jeremie Beaudoin
+ * @author Jeremie Beaudoin-Dion
  *
  */
 public class Fact<E> {

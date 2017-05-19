@@ -4,7 +4,7 @@ package images;
 * A Point is an object which has two variables representing
 * the X axis and the Y axis. 
 *
-*@author Jérémie Beaudoin-Dion
+*@author JÃ©rÃ©mie Beaudoin-Dion
 */
 public class Point {
 
@@ -14,8 +14,8 @@ public class Point {
 	/**
 	* The constructor
 	*
-	*@param x: the X axis integer
-	*@param y: the Y axis integer
+	* @param x: the X axis integer
+	* @param y: the Y axis integer
 	*/
 	public Point(int x, int y) {
 		this.x = x;

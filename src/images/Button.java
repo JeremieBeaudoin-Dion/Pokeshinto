@@ -3,7 +3,7 @@ package images;
 /**
  * A physical object which can be selected
  * 
- * @author Jérémie Beaudoin-Dion
+ * @author JÃ©rÃ©mie Beaudoin-Dion
  *
  */
 public class Button extends PhysicalObject {

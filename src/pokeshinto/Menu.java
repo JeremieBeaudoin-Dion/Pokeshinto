@@ -4,7 +4,7 @@ package pokeshinto;
  * A menu is a game object that stores different buttons and Action
  * that are attached to these buttons
  * 
- * @author Jérémie Beaudoin-Dion
+ * @author JÃ©rÃ©mie Beaudoin-Dion
  *
  */
 public class Menu {
@@ -13,11 +13,12 @@ public class Menu {
 	private String[] buttons;
 	private String allert;
 	private int selected;
-	
+
 	/**
 	 * Constructor
-	 * 
-	 * @param rootMenu: the choice of buttons at the root of the menu
+	 *
+	 * @param ID
+	 * @param buttons
 	 * @param allert
 	 */
 	public Menu(String ID, String[] buttons, String allert) {

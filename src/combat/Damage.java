@@ -1,34 +1,36 @@
 package combat;
+
 /**
  * An object representing damage. Dmg is affected by focus or Strenght,
  * and is calculate with the CombatInfo formula.
  * 
- * @author Jérémie Beaudoin-Dion
+ * @author JÃ©rÃ©mie Beaudoin-Dion
  *
  */
 public class Damage extends StatOriented{
 	
-	boolean isMe;  // owner or other
-	String damageType;  // Physical or magical?
-	double amount;
-	String attribute;
-	int spread;
-	String targetDamage;  // owner or other
-	
-	Element element;
-	Condition condition;
-	boolean hasCondition;
+	private boolean isMe;  // owner or other
+    private String damageType;  // Physical or magical?
+    private double amount;
+    private String attribute;
+    private int spread;
+    private String targetDamage;  // owner or other
 
-	/**
-	 * Basic constructor
-	 * 
-	 * @param amountTarget: From who to get the attribute for amount*attribute
-	 * @param amout: amout*attribute = damage
-	 * @param attribute: amout*attribute = damage
-	 * @param spread: Spread is at 0 normally. Skills and effect can set it between -10 and 10. 
-	 * The effect of Strenght and Armor is augmented by 1/10 for each positive spread.
-	 * @param targetDamage: who is the target of the damage
-	 */
+    private Element element;
+    private Condition condition;
+    private boolean hasCondition;
+
+    /**
+     * Basic constructor
+     *
+     * @param amountDealerIsMe: if the holder is the one to deal the damage
+     * @param amount: how much damage
+     * @param attribute: which attribute is affected
+     * @param spread: if the damage has SPREAD (from 0 to 20)
+     * @param targetDamage: who is affected by the damage
+     * @param condition: what condition the damage must follow
+     * @param element: the element of the damage (War, Art, Magic, etc.)
+     */
 	public Damage(boolean amountDealerIsMe, double amount, String attribute, int spread, String targetDamage, Condition condition, Element element) {
 		this.isMe = amountDealerIsMe;
 		this.amount = amount;
@@ -50,17 +52,17 @@ public class Damage extends StatOriented{
 			damageType = "Magical";
 		}
 	}
-	
-	/**
-	 * Constructor without condition
-	 * 
-	 * @param amountDealerIsMe
-	 * @param damageType
-	 * @param amount
-	 * @param attribute
-	 * @param spread
-	 * @param targetDamage
-	 */
+
+    /**
+     * Constructor without conditions
+     *
+     * @param amountDealerIsMe: if the holder is the one to deal the damage
+     * @param amount: how much damage
+     * @param attribute: which attribute is affected
+     * @param spread: if the damage has SPREAD (from 0 to 20)
+     * @param targetDamage: who is affected by the damage
+     * @param element: the element of the damage (War, Art, Magic, etc.)
+     */
 	public Damage(boolean amountDealerIsMe, double amount, String attribute, int spread, String targetDamage, Element element) {
 		this.isMe = amountDealerIsMe;
 		this.amount = amount;
@@ -80,21 +82,21 @@ public class Damage extends StatOriented{
 	}
 	
 	// Getters
-	public String getDamageType() {
+	String getDamageType() {
 		return damageType;
 	}
-	public boolean getHasCondition() {
+	boolean getHasCondition() {
 		return hasCondition;
 	}
 	
 	/**
 	 * Return the total value of the damage, considering defense and everything
 	 * 
-	 * @param combat - the current combat state of the game
-	 * @param damageOwner - "Player" if player is owner of the poke who does the combat
+	 * @param combat: the current combat state of the game
+	 * @param damageOwner: "Player" if player is owner of the poke who does the combat
 	 * @return double damage value to reduce from target's health
 	 */
-	public double getTotalDamage(Combat combat, String damageOwner){
+	double getTotalDamage(Combat combat, String damageOwner){
 		
 		// Check condition
 		if (hasCondition){

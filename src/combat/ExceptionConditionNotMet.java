@@ -1,8 +1,13 @@
 package combat;
 
-public class ExceptionConditionNotMet extends RuntimeException {
+/**
+ * An exception thrown when a condition is not met
+ *
+ * @author Jérémie Beaudoin-Dion
+ */
+class ExceptionConditionNotMet extends RuntimeException {
 	
-	public ExceptionConditionNotMet() {
+	ExceptionConditionNotMet() {
 		super();
 	}
 

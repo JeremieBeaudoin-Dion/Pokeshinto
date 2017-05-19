@@ -15,7 +15,7 @@ import images.Point;
  * @author Jeremie Beaudoin-Dion
  *
  */
-public class CombatImageLoader {
+class CombatImageLoader {
 
 	// Images attributes
 	private BufferedImage combatBackground;
@@ -34,9 +34,9 @@ public class CombatImageLoader {
 	
 	/**
 	 * Constructor
-	 * @throws IOException 
+	 * @throws IOException : if the Image is missing from the file
 	 */
-	public CombatImageLoader() throws IOException {
+	CombatImageLoader() throws IOException {
 		
 		healthBarBackgroundWidth = 256;
 		healthBarBackgroundHeight = 32;
@@ -70,7 +70,8 @@ public class CombatImageLoader {
 	/**
 	 * Loads all of the images from the image file
 	 * Has a try/catch if the image is missing
-	 * @throws IOException 
+	 *
+	 * @throws IOException : if the Image is missing from the file
 	 */
 	private void loadAllImages() throws IOException {
 		// Loads all images
@@ -87,7 +88,7 @@ public class CombatImageLoader {
 	 * 
 	 * @return the combatBackground image
 	 */
-	public BufferedImage getCombatBackgound() {
+	BufferedImage getCombatBackgound() {
 		return combatBackground;
 	}
 	
@@ -95,9 +96,9 @@ public class CombatImageLoader {
 	 * Getter
 	 * 
 	 * @param percentage: how much of the image's width you need to show in percentage
-	 * @return
+	 * @return the background of the health bar
 	 */
-	public BufferedImage getHealthBarBackground(double percentage) {
+	BufferedImage getHealthBarBackground(double percentage) {
 		if (percentage <= 0) {
 			return null;
 		}
@@ -112,7 +113,7 @@ public class CombatImageLoader {
 	 * 
 	 * @return: the width of the HealthBar
 	 */
-	public int getHealthBarWidth() {
+	int getHealthBarWidth() {
 		return healthBarBackgroundWidth;
 	}
 	
@@ -121,7 +122,7 @@ public class CombatImageLoader {
 	 * 
 	 * @return: the height of the HealthBar
 	 */
-	public int getHealthBarHeight() {
+	int getHealthBarHeight() {
 		return healthBarBackgroundHeight;
 	}
 	
@@ -130,7 +131,7 @@ public class CombatImageLoader {
 	 * 
 	 * @return the foreground of the Health Bar
 	 */
-	public BufferedImage getHealthBarForeground() {
+	BufferedImage getHealthBarForeground() {
 		return healthBarForeground;
 	}
 	
@@ -138,11 +139,11 @@ public class CombatImageLoader {
 	 * Getter for the menu selector
 	 * Creates the image depending on the width and height
 	 * 
-	 * @param width
-	 * @param height
+	 * @param width: the number of pixel representing the desired width
+	 * @param height: the number of pixel representing the desired height
 	 * @return: an image that represents the selector of the Menu
 	 */
-	public BufferedImage getMenuSelector(int width, int height) {		
+	BufferedImage getMenuSelector(int width, int height) {
 		// Ensures that the selector is not changed every frame
 		if (this.menuSelectorLast.getX() != width || this.menuSelectorLast.getY() != height){
 			this.menuSelectorCropped = cropMenuSelector(width, height);
@@ -154,9 +155,9 @@ public class CombatImageLoader {
 	
 	/**
 	 * Create a new sub image from the menu selector
-	 * 
-	 * @param width
-	 * @param height
+	 *
+     * @param width: the number of pixel representing the desired width
+     * @param height: the number of pixel representing the desired height
 	 * @return: an image that represents the selector of the Menu
 	 */
 	private BufferedImage cropMenuSelector(int width, int height) {

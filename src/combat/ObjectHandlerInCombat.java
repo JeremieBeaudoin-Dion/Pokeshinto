@@ -10,7 +10,6 @@ import images.Image;
 import images.PhysicalObject;
 import images.Point;
 import images.Text;
-import pokeshinto.Dictionary;
 import pokeshinto.Game;
 import pokeshinto.Menu;
 
@@ -18,7 +17,7 @@ import pokeshinto.Menu;
  * Is the model of the game. It handles the objects of the 
  * game and their position in combat.
  * 
- * @author Jérémie Beaudoin-Dion
+ * @author JÃ©rÃ©mie Beaudoin-Dion
  *
  */
 public class ObjectHandlerInCombat {

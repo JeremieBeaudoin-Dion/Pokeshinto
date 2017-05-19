@@ -3,7 +3,7 @@ package pokeshinto;
 /**
  * A choice binds a String action to a <T> element
  * 
- * @author Jérémie Beaudoin-Dion
+ * @author JÃ©rÃ©mie Beaudoin-Dion
  */
 public class Action<T> {
 	

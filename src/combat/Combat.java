@@ -1,8 +1,7 @@
 package combat;
+
 import pokeshinto.Action;
-import pokeshinto.Dictionary;
 import pokeshinto.KeyException;
-import pokeshinto.Player;
 import pokeshinto.Pokeshinto;
 
 /**
@@ -11,7 +10,7 @@ import pokeshinto.Pokeshinto;
  * made here will not affect the player, Except the Health which will be updated
  * at the end of the combat.
  * 
- * @author Jérémie Beaudoin-Dion
+ * @author JÃ©rÃ©mie Beaudoin-Dion
  *
  */
 public class Combat {
@@ -100,14 +99,14 @@ public class Combat {
 	
 	/**
 	 * Adds a status to the player
-	 * @param status
+	 * @param status: the Status to give to the player
 	 */
 	public void addPlayerStatus(Status status) {
 		player.addStatus(status);
 	}
 	/**
-	 * Adds a status to the player
-	 * @param status
+	 * Adds a status to the opponent
+	 * @param status: the Status to give to the opponent
 	 */
 	public void addOpponentStatus(Status status) {
 		opponent.addStatus(status);
@@ -117,8 +116,8 @@ public class Combat {
 	/**
 	 * Returns if an action from the player is doable
 	 * 
-	 * @param action
-	 * @return
+	 * @param action: the action to make
+	 * @return if the action is doable
 	 */
 	public boolean getPlayerActionIsDoable(Action<Integer> action) {
 		 if (action.getKey().equals("Skill")){
@@ -136,8 +135,7 @@ public class Combat {
 	 * 
 	 * They are also very usefull for the accessibility of the stats for the 
 	 * Skill and Damage classes.
-	 * 
-	 * @return
+	 *
 	 */
 	// Getters Player
 	public double getPlayerMaxHp() {

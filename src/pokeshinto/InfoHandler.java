@@ -1,4 +1,5 @@
 package pokeshinto;
+
 import combat.AISinglePokeshinto;
 import combat.CombatAI;
 import combat.CombatAttributes;
@@ -9,11 +10,12 @@ import combat.Skill;
 import combat.Status;
 import combat.StatusProtection;
 import combat.Trigger;
+import combat.Dictionary;
 
 /**
  * This class contains all the basic FINAL game information.
  * 
- * @author Jérémie Beaudoin-Dion
+ * @author JÃ©rÃ©mie Beaudoin-Dion
  *
  */
 public final class InfoHandler {

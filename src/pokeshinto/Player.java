@@ -9,7 +9,7 @@ import world.WorldImageLoader;
  * The class that represent the player Object. Handles 
  * HP, equipment, etc.
  * 
- * @author Jérémie Beaudoin-Dion
+ * @author JÃ©rÃ©mie Beaudoin-Dion
  *
  */
 public class Player{
@@ -33,19 +33,14 @@ public class Player{
 	private Pokeshinto[] allShintos;
 	
 	// Useful combat attributes for player
-	CombatAttributes combatAttributes;
-	
+	private CombatAttributes combatAttributes;
+
 	/**
-	 * Constructor for combat player
-	 * 
-	 * @param pixelPosition
-	 * @param facing
-	 * @param health
-	 * @param equipment
-	 * @param currentShinto
-	 * @param items
-	 * @param allShintos
-	 * @param combatAttributes
+	 * Constructor
+	 *
+	 * @param health: the maxHealth of the player
+	 * @param allShintos: all current pokeshinto
+	 * @param combatAttributes: the attributes of the player in combat
 	 */
 	public Player(double health, Pokeshinto[] allShintos, CombatAttributes combatAttributes) {
 		this.health = health;

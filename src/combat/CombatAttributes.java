@@ -1,26 +1,29 @@
 package combat;
 
-import pokeshinto.Dictionary;
-
+/**
+ * Holds the important attributes for an AI during combat
+ *
+ * @author Jérémie Beaudoin-Dion
+ */
 public class CombatAttributes {
 	
 	// Basic stats
-	double strength;
-	double focus;
-	double armor;
-	double agility;
+	private double strength;
+	private double focus;
+	private double armor;
+	private double agility;
 	
 	// All elements reduction
-	Dictionary<Integer> elementResistance;  // change?
+	private Dictionary<Integer> elementResistance;  // change?
 
 	/**
 	 * Constructor
 	 * 
-	 * @param strength
-	 * @param focus
-	 * @param armor
-	 * @param agility
-	 * @param elementResistance
+	 * @param strength: how much damage can be dealt
+	 * @param focus: how much magical damage can be dealt
+	 * @param armor: the defense
+	 * @param agility: the speed
+	 * @param elementResistance: if it has any element resistance
 	 */
 	public CombatAttributes(double strength, double focus, double armor, double agility, Dictionary<Integer> elementResistance) {
 		this.strength = strength;
@@ -30,6 +33,9 @@ public class CombatAttributes {
 		this.elementResistance = elementResistance;
 	}
 
+	/**
+	 * Getters
+	 */
 	public double getStrength() {
 		return strength;
 	}

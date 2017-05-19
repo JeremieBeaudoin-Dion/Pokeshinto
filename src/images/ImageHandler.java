@@ -24,7 +24,7 @@ import pokeshinto.Game;
  * Because this class extends JFrame, it will handle direct input
  * and sent it to the Action class
  * 
- * @author Jérémie Beaudoin-Dion
+ * @author JÃ©rÃ©mie Beaudoin-Dion
  *
  */
 public class ImageHandler extends JFrame {
@@ -65,7 +65,7 @@ public class ImageHandler extends JFrame {
 	/** 
 	 * Called every frame, this method handles graphics 
 	 * 
-	 * @param gameState
+	 * @param physicalObjects: the PhysicalObjects to show on the frame
 	 */ 
 	public void update(ArrayList<PhysicalObject> physicalObjects) {
 		
@@ -95,9 +95,10 @@ public class ImageHandler extends JFrame {
 	}
 	
 	/**
-	 * Call every frame the game is in the Combat gameState
+	 * Distributes the physical objects to the correct private method
 	 * 
-	 * @param bbg
+	 * @param bbg: the doubble buffer
+	 * @param physicalObjects: the physical object to show
 	 */
 	private void drawFrame(Graphics bbg, ArrayList<PhysicalObject> physicalObjects) {
 		
@@ -120,9 +121,9 @@ public class ImageHandler extends JFrame {
 	
 	/**
 	 * Prints a Button on a buffered image
-	 * 
-	 * @param bbg
-	 * @param button
+	 *
+     * @param bbg: the doubble buffer
+	 * @param button: the button to show
 	 */
 	private void printButton(Graphics bbg, Button button) {
 		if (button.getImage() != null) {
@@ -135,9 +136,9 @@ public class ImageHandler extends JFrame {
 	
 	/**
 	 * Prints an image on a buffered image
-	 * 
-	 * @param bbg
-	 * @param image
+	 *
+     * @param bbg: the doubble buffer
+	 * @param image: the image to show
 	 */
 	private void printImage(Graphics bbg, Image image) {
 		bbg.drawImage(image.getImage(), image.getX(), image.getY(), null);
@@ -145,9 +146,9 @@ public class ImageHandler extends JFrame {
 	
 	/**
 	 * Prints a Text object on a buffered image
-	 * 
-	 * @param bbg
-	 * @param text
+	 *
+     * @param bbg: the doubble buffer
+	 * @param text: the text to show
 	 */
 	private void printText(Graphics bbg, Text text) {
 		bbg.setColor(text.getColor());
@@ -178,7 +179,7 @@ public class ImageHandler extends JFrame {
 	
 	/**
 	 * TO DELETE
-	 * @param bbg
+     * @param bbg: the doubble buffer
 	 */
 	private void example(Graphics bbg) {
 		// drawOval(int x, int y, int width, int length)
@@ -220,7 +221,7 @@ public class ImageHandler extends JFrame {
 	 * Returns the current position of the mouse relative to the 
 	 * screen position.
 	 * 
-	 * @return
+	 * @return the current mouse position with a Java.Point
 	 */
 	public Point getMousePosition() {
 		

@@ -1,8 +1,9 @@
 package combat;
+
 /**
  * A conditional object is an object which can be tested with its conditions
  * 
- * @author Jérémie Beaudoin-Dion
+ * @author JÃ©rÃ©mie Beaudoin-Dion
  *
  */
 public abstract class Conditional {
@@ -28,6 +29,7 @@ public abstract class Conditional {
 		this.initBuildup = buildup;
 		this.buildup = buildup;
 		this.once = once;
+		this.condition = condition;
 	}
 	
 	/**

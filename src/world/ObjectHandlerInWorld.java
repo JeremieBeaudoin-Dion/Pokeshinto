@@ -1,12 +1,9 @@
 package world;
 
-import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import images.Image;
 import images.PhysicalObject;
-import images.Point;
 import pokeshinto.Game;
 import pokeshinto.Player;
 
@@ -28,8 +25,7 @@ public class ObjectHandlerInWorld {
 	
 	/**
 	 * Basic constructor for the Model component of the World
-	 * 
-	 * @param actionHandlerInWorld: the controller instance in world
+	 *
 	 * @param player: the player instance of the game
 	 * @throws IOException
 	 */

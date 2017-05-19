@@ -9,7 +9,7 @@ import images.Point;
 /**
  * A class for an enemy roaming the world
  * 
- * @author Jérémie Beaudoin-Dion
+ * @author JÃ©rÃ©mie Beaudoin-Dion
  *
  */
 public class Enemy extends PhysicalObject {

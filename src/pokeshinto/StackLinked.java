@@ -3,9 +3,7 @@ package pokeshinto;
 /**
  * An implementation of a stack with linked elements
  * 
- * @author Jérémie Beaudoin-Dion
- *
- * @param <E> : the type of the element
+ * @author JÃ©rÃ©mie Beaudoin-Dion
  */
 public class StackLinked<E>{
 	

@@ -3,6 +3,11 @@ package images;
 import java.awt.Color;
 import java.awt.Font;
 
+/**
+ * A text is a String which can be show on the frame
+ *
+ * @author Jérémie Beaudoin-Dion
+ */
 public class Text extends PhysicalObject {
 	
 	private String message;
@@ -13,11 +18,11 @@ public class Text extends PhysicalObject {
 	/**
 	 * Constructor
 	 * 
-	 * @param x
-	 * @param y
+	 * @param position
 	 * @param message
 	 * @param font
 	 * @param alignment: "Right", "Left", "Center"
+	 * @param color
 	 */
 	public Text(Point position, String message, Font font, String alignment, Color color){
 		super(position, font.getSize(), font.getSize() * message.length());

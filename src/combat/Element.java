@@ -1,10 +1,11 @@
 package combat;
+
 /**
  * Every skill has an element. During combat, the skill's element will
  * determine the "win" of the turn. The more the Player wins the element's
  * war during the turns, the easier the combat will be.
  * 
- * @author Jérémie Beaudoin-Dion
+ * @author JÃ©rÃ©mie Beaudoin-Dion
  *
  */
 public class Element implements Comparable<Element> {
