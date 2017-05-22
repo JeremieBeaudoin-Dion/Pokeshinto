@@ -1,6 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/combat/AISinglePokeshinto.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/ActionHandlerInCombat.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/Combat.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/CombatAI.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/CombatAttributes.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/CombatImageLoader.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/Condition.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/Conditional.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/Damage.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/DamageAttribute.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/Dictionary.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/Element.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/ExceptionComparableArrays.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/ExceptionConditionNotMet.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/ExceptionUnusableSkill.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/ObjectHandlerInCombat.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/Passive.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/PlayerCopy.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/Skill.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/StatOriented.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/Status.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/StatusProtection.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/Trigger.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/TriggeredDamage.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/images/Button.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/images/Image.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/images/ImageHandler.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/images/PhysicalObject.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/images/Point.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/images/Text.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/pokeshinto/Action.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/pokeshinto/ExceptionEmptyStack.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/pokeshinto/Game.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/pokeshinto/InfoHandler.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/pokeshinto/InputHandler.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/pokeshinto/KeyException.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/pokeshinto/KeyHandler.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/pokeshinto/Menu.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/pokeshinto/MouseHandler.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/pokeshinto/Player.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/pokeshinto/Pokeshinto.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/pokeshinto/StackLinked.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/world/ActionHandlerInWorld.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/world/Door.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/world/Enemy.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/world/Event.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/world/Fact.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/world/Map.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/world/ObjectHandlerInWorld.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/world/WorldImageLoader.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/world/WorldMapCreator.java" charset="UTF-16" />
   </component>
 </project>
