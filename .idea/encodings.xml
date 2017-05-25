@@ -26,6 +26,7 @@
     <file url="file://$PROJECT_DIR$/src/combat/Trigger.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/TriggeredDamage.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/images/Button.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/images/Ellipse.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/images/Image.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/images/ImageHandler.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/images/PhysicalObject.java" charset="UTF-16" />
@@ -44,6 +45,7 @@
     <file url="file://$PROJECT_DIR$/src/pokeshinto/Pokeshinto.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/pokeshinto/StackLinked.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/world/ActionHandlerInWorld.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/world/CollisionHandler.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/world/Door.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/world/Enemy.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/world/Event.java" charset="UTF-16" />
@@ -51,6 +53,7 @@
     <file url="file://$PROJECT_DIR$/src/world/Map.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/world/ObjectHandlerInWorld.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/world/WorldImageLoader.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/world/WorldMapArrayData.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/world/WorldMapCreator.java" charset="UTF-16" />
   </component>
 </project>
