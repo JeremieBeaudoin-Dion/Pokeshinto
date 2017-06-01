@@ -50,7 +50,10 @@
     <file url="file://$PROJECT_DIR$/src/world/CollisionHandler.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/world/Door.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/world/Enemy.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/world/EnemyRoaming.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/world/Event.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/world/ExceptionCombatNotStarted.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/world/ExceptionMapNotInstanciated.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/world/Fact.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/world/Map.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/world/MovingObject.java" charset="UTF-16" />
@@ -59,5 +62,6 @@
     <file url="file://$PROJECT_DIR$/src/world/WorldImageLoader.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/world/WorldMapArrayData.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/world/WorldMapCreator.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/world/WorldMapObjectInformation.java" charset="UTF-16" />
   </component>
 </project>
