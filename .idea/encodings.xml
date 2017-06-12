@@ -8,6 +8,8 @@
     <file url="file://$PROJECT_DIR$/src/combat/CombatAttributes.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/CombatImageLoader.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/Condition.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/ConditionAction.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/ConditionStat.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/Conditional.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/Damage.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/DamageAttribute.java" charset="UTF-16" />
@@ -22,6 +24,7 @@
     <file url="file://$PROJECT_DIR$/src/combat/Skill.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/StatOriented.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/Status.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/StatusBuff.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/StatusProtection.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/StatusRestrict.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/Trigger.java" charset="UTF-16" />
