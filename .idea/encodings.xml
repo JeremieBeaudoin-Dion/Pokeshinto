@@ -6,12 +6,12 @@
     <file url="file://$PROJECT_DIR$/src/combat/Combat.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/CombatAI.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/CombatAttributes.java" charset="UTF-16" />
-    <file url="file://$PROJECT_DIR$/src/combat/CombatImageLoader.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/Dictionary.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/Element.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/ExceptionComparableArrays.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/ExceptionConditionNotMet.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/ExceptionUnusableSkill.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/ImageLoader.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/InfoHandler.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/ObjectHandlerInCombat.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/PlayerCopy.java" charset="UTF-16" />
