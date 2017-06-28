@@ -1,35 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/src/combat/AISinglePokeshinto.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/ActionHandlerInCombat.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/Combat.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/CombatAI.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/CombatAttributes.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/Dictionary.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/Element.java" charset="UTF-16" />
-    <file url="file://$PROJECT_DIR$/src/combat/ExceptionComparableArrays.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/ExceptionConditionNotMet.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/ExceptionUnusableSkill.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/ImageLoader.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/InfoHandler.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/ObjectHandlerInCombat.java" charset="UTF-16" />
-    <file url="file://$PROJECT_DIR$/src/combat/PlayerCopy.java" charset="UTF-16" />
-    <file url="file://$PROJECT_DIR$/src/combatActions/Condition.java" charset="UTF-16" />
-    <file url="file://$PROJECT_DIR$/src/combatActions/ConditionAction.java" charset="UTF-16" />
-    <file url="file://$PROJECT_DIR$/src/combatActions/ConditionStat.java" charset="UTF-16" />
-    <file url="file://$PROJECT_DIR$/src/combatActions/Conditional.java" charset="UTF-16" />
-    <file url="file://$PROJECT_DIR$/src/combatActions/Damage.java" charset="UTF-16" />
-    <file url="file://$PROJECT_DIR$/src/combatActions/DamageHpFlat.java" charset="UTF-16" />
-    <file url="file://$PROJECT_DIR$/src/combatActions/Passive.java" charset="UTF-16" />
-    <file url="file://$PROJECT_DIR$/src/combatActions/Skill.java" charset="UTF-16" />
-    <file url="file://$PROJECT_DIR$/src/combatActions/StatOriented.java" charset="UTF-16" />
-    <file url="file://$PROJECT_DIR$/src/combatActions/Status.java" charset="UTF-16" />
-    <file url="file://$PROJECT_DIR$/src/combatActions/StatusBuff.java" charset="UTF-16" />
-    <file url="file://$PROJECT_DIR$/src/combatActions/StatusProtection.java" charset="UTF-16" />
-    <file url="file://$PROJECT_DIR$/src/combatActions/StatusRestrict.java" charset="UTF-16" />
-    <file url="file://$PROJECT_DIR$/src/combatActions/Trigger.java" charset="UTF-16" />
-    <file url="file://$PROJECT_DIR$/src/combatActions/TriggeredDamage.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/combatAI/AISinglePokeshinto.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/combatAI/PlayerCopy.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/combatActions/Condition.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/combatActions/ConditionAction.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/combatActions/ConditionStat.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/combatActions/Conditional.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/combatActions/Damage.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/combatActions/DamageHpFlat.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/combatActions/Passive.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/combatActions/Skill.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/combatActions/StatOriented.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/combatActions/Status.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/combatActions/StatusBuff.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/combatActions/StatusProtection.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/combatActions/StatusRestrict.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/combatActions/Trigger.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/combat/combatActions/TriggeredDamage.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/images/Button.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/images/Camera.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/images/CardinalDirection.java" charset="UTF-16" />
