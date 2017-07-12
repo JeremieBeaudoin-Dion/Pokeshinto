@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/io/ObjectOutputStream.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/combat/ActionHandlerInCombat.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/Combat.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/combat/CombatAI.java" charset="UTF-16" />
@@ -39,7 +40,6 @@
     <file url="file://$PROJECT_DIR$/src/images/Position.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/images/Text.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/pokeshinto/Action.java" charset="UTF-16" />
-    <file url="file://$PROJECT_DIR$/src/pokeshinto/ExceptionEmptyStack.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/pokeshinto/Game.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/pokeshinto/InputHandler.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/pokeshinto/KeyException.java" charset="UTF-16" />
