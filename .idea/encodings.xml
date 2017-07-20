@@ -50,20 +50,20 @@
     <file url="file://$PROJECT_DIR$/src/pokeshinto/Pokeshinto.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/world/ActionHandlerInWorld.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/world/CollisionHandler.java" charset="UTF-16" />
-    <file url="file://$PROJECT_DIR$/src/world/Door.java" charset="UTF-16" />
-    <file url="file://$PROJECT_DIR$/src/world/Enemy.java" charset="UTF-16" />
-    <file url="file://$PROJECT_DIR$/src/world/EnemyRoaming.java" charset="UTF-16" />
-    <file url="file://$PROJECT_DIR$/src/world/Event.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/world/ExceptionCombatNotStarted.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/world/ExceptionMapNotInstanciated.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/world/Fact.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/world/ImageLoaderInWorld.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/world/Map.java" charset="UTF-16" />
-    <file url="file://$PROJECT_DIR$/src/world/MovingObject.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/world/ObjectHandlerInWorld.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/world/ShadowFactory.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/world/WorldMapArrayData.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/world/WorldMapCreator.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/world/WorldMapObjectInformation.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/world/worldObjects/Door.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/world/worldObjects/Enemy.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/world/worldObjects/EnemyRoaming.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/world/worldObjects/Event.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/world/worldObjects/MovingObject.java" charset="UTF-16" />
   </component>
 </project>
